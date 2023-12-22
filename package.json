@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "workspaces": ["packages/*"],
-    "dependencies": {
+    "scripts": {
+        "develop:webapp": "yarn workspace @packages/webapp run:app"
     }
   }
