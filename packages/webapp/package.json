@@ -1,0 +1,9 @@
+{
+    "name": "@packages/webapp",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@packages/components": "1.0.0",
+        "@packages/backend-api": "1.0.0"
+    }
+  }

@@ -1,0 +1,8 @@
+{
+    "name": "masters-projects",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": ["packages/*"],
+    "dependencies": {
+    }
+  }
