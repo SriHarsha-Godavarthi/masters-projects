@@ -1,0 +1,9 @@
+{
+  "name": "@packages/backend_api",
+  "version": "1.0.0",
+  "description": "custom functions for calling backend api's",
+  "main": "index.js",
+  "author": "harsha",
+  "license": "MIT",
+  "private": true
+}
