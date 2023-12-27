@@ -25,5 +25,15 @@ webpack - merge all files into single file(bundle.js)
 3. boolean true can directly pass property name for false we have to pass value
 4. inline-styling we have to pass object inside curlybraces
 5. class property in html can be used as className
- 
 
+# imports and exports
+there are two types of exports
+1. default export:
+you can change name for default export while importing
+can import only one component
+2. Name export
+you can't change name for named export while importing
+ can import multiple named component's
+
+ ** both exports can be imported using one line
+ 
