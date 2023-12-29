@@ -1,8 +1,8 @@
 /* Navbar.css */
 
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: black;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
   }
@@ -15,7 +15,7 @@ nav {
   }
   
   li {
-    margin-right: 20px;
+    margin-right: 40px;
     text-align:end;
   }
   
