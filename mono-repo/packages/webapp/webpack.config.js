@@ -5,12 +5,12 @@ mode: 'development',
 entry: './src/index.js',
 devtool: 'inline-source-map',
 output: {
-path: path.join(__dirname, '/dist'),
+path: path.join(__dirname, '../../../dist'),
 filename: 'bundle.js'
 },
 devtool: 'inline-source-map',
 devServer: {
-static: './dist',
+static: '../../../dist',
 },
 module: {
 rules: [
