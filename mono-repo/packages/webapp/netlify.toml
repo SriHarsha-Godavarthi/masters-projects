@@ -1,0 +1,3 @@
+[build]
+  command = "yarn build:webapp"
+  publish = "dist"  # Change to your actual build directory
