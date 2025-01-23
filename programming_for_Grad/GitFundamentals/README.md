@@ -24,7 +24,7 @@ I)commit those to the github from git.but these changes are not yet committed to
 II)Another aspect is that the status message hints about what to do next.
 
 
-**git restore --staged folder/fileName**: To undo the changes shown in the status message that were not committed 
+**git restore --staged folder/fileName**: To undo the changes shown in the status message/staged that were not committed.no changes to file content just will remove from stagging area 
 
 **git add . / fileName**: this command is responsible for staging changes (i.e. If you want to add these changes to the repository)
 .staging  means that Git knows about the change, but it is not permanent in the repository. (: A place to prepare changes for a commit.)
@@ -34,6 +34,10 @@ II)Another aspect is that the status message hints about what to do next.
 
 
 **git commit -m "commit message"**: the commited changes are stored locally in your meachine and only  when you push these changes only it will be available in remote repository.(these are the changes staged after the previous commit)
+
+to cancel a commit you have to do a new commit.
+**git revert HEAD**: cancels the previous commit made
+
 
 **git push**: This command allows you to push all commits done in that branch to remote branch under same repository.
 
@@ -58,6 +62,24 @@ git log --oneline --since="5 minutes ago"
 git log --oneline --until="5 minutes ago"
 git log --oneline --author="Your Name"
 git log --oneline --all**
+
+## Tagging versions
+
+Git tags are a fantastic way to label specific commits with human-readable names, typically used to mark important milestones in a project's history, such as releases or major changes. Tags are essentially immutable references to a specific commit.
+
+Creating a tag for the first version/commit/hash
+**git tag <tagName>**
+Creating a tag for the previous version/commit/hash
+**git checkout <tagName>(^|~N)**
+**git tag <previousVersionTagName>**
+N- refers to n-th version prior to <tag>
+^ - refers to previous version
+delete a tag 
+git tag -d <tagname>
+
+discarding changes before staging/undo changes made and restore to previous commit
+**git restore filename**
+
 
 
 I think some topics are not covered like staging, cloning repositries securely using SSH
