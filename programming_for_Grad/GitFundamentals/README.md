@@ -19,19 +19,45 @@ It is used when you want to get the changes done by other developer to your loca
 ## Some basic Git commands and description
 
 **git status** : tells if your changes are staged (or) not. After staging changes only you will be able to
-                  commit those to the github from git.
 
-**git add . / fileName**: this command is responsible for staging changes
+I)commit those to the github from git.but these changes are not yet committed to the repository.
+II)Another aspect is that the status message hints about what to do next.
 
-**git commit -m "commit message"**: the commited changes are stored locally in your meachine and only     when you push these changes only it will be available in remote repository.
+
+**git restore --staged folder/fileName**: To undo the changes shown in the status message that were not committed 
+
+**git add . / fileName**: this command is responsible for staging changes (i.e. If you want to add these changes to the repository)
+.staging  means that Git knows about the change, but it is not permanent in the repository. (: A place to prepare changes for a commit.)
+
+.Separating staging and committing, you get the chance to easily customize what goes into a commit.
+
+
+
+**git commit -m "commit message"**: the commited changes are stored locally in your meachine and only  when you push these changes only it will be available in remote repository.(these are the changes staged after the previous commit)
 
 **git push**: This command allows you to push all commits done in that branch to remote branch under same repository.
 
-**git checkout "branchName"**: It allows to change the branch under same repositories.
+**git checkout "7characterhashvaluefoundinlog"**: It allows to change the commit/hash under same branch.
+
+**git switch "branchName"**: allows to switch between branches.
 
 **git merge "branchName"**: It allows to merge changes from other branches.but be sure to pull the merging branch code before merging to you branch.
 
 **git revert "commit_sha"**: revert is the command which allows you to remove/delete the changes which you have made. 
+
+**git branch -m "oldbranchName" "newBranchName"**: will change the exsisting branch name
+
+**git status**: will give you current status of the branch your in(i.e. to check the current state of the repository)
+
+**git log --oneline**  is used to view the commit history in a Git repository. It displays a list of commits along with details such as the commit hash, author, date, and commit message.
+
+You fully control what the log shows.Examples
+
+**git log --oneline --max-count=2
+git log --oneline --since="5 minutes ago"
+git log --oneline --until="5 minutes ago"
+git log --oneline --author="Your Name"
+git log --oneline --all**
 
 
 I think some topics are not covered like staging, cloning repositries securely using SSH
