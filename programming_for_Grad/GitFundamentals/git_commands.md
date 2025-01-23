@@ -312,4 +312,4 @@ SSH is a secure way to clone and interact with repositories, as opposed to HTTPS
 
 ---
 
-This README provides a comprehensive overview of Git basics, GitHub features, and secure repository cloning. For more advanced topics, check the [givDocumentation](https://git-scm.com/doc).
+This README provides a comprehensive overview of Git basics, GitHub features, and secure repository cloning. For more advanced topics, check the [gitDocumentation](https://git-scm.com/doc).
